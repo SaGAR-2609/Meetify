@@ -22,7 +22,7 @@ app.get("/", (req, res)=> {
 });
 
 const start = async () => {
-    const connectionDB = await mongoose.connect("mongodb+srv://sagar:ejosVQZT2emcIUQ0@meetify-cluster.bxdwnrq.mongodb.net/?appName=Meetify-Cluster");
+    const connectionDB = await mongoose.connect(process.env.MONGODB_LINK);
     console.log(`MONGO Connected to the mongoDB server: ${connectionDB.connection.host}`);
     server.listen(app.get("port"), ()=>{
         console.log("App is listening on port 8000");
