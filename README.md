@@ -55,7 +55,7 @@ The platform focuses on encouraging healthy social interactions while providing 
 - Node.js
 - Bcrypt
 - Socket.io
-- HTTP- Status
+- HTTP - Status
 - Cors
 
 ### Database
@@ -73,6 +73,20 @@ The platform focuses on encouraging healthy social interactions while providing 
 NexMeet
 │
 ├── Backend/
+│       └── srs/
+│           ├──── controllers/
+│           │       ├─── socketManager.js
+│           │       └─── user.controller.js
+│           │
+│           ├──── models/
+│           │       ├──── meeting.model.js
+│           │       └──── users.model.js
+│           │
+│           ├──── routes/
+│           │       └──── user.route.js
+│           │
+│           └──── app.js
+│
 ├── Frontend/
 ├── .gitignore
 └── README.md
