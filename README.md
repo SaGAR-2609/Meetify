@@ -88,7 +88,38 @@ NexMeet
 │           └──── app.js
 │
 ├── Frontend/
+│           ├──── public/
+│           │        ├──── background.png
+│           │        └──── mobile.png
+│           │
+│           ├──── src/
+│           │        ├──── contexts/
+│           │        │         ├──── AuthContext.jsx
+│           │        │         └──── backend.code-workspace
+│           │        │
+│           │        ├──── pages/
+│           │        │         ├──── authentication.jsx
+│           │        │         ├──── history.jsx
+│           │        │         ├──── home.jsx
+│           │        │         ├──── landing.jsx
+│           │        │         └──── VideoMeet.jsx
+│           │        │
+│           │        ├──── styles/
+│           │        │         └──── videoComponent.module.css
+│           │        │
+│           │        ├──── utils/
+│           │        │         └──── withAuth.jsx
+│           │        │
+│           │        ├──── App.css
+│           │        ├──── App.jsx
+│           │        ├──── environmen.js
+│           │        ├──── index.css
+│           │        └──── main.jsx
+│           │
+│           └──── index.html
+│
 ├── .gitignore
+│
 └── README.md
 ```
 
