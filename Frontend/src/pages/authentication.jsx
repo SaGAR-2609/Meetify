@@ -88,7 +88,6 @@ export default function Authentication() {
                             <LockOutlinedIcon />
                         </Avatar>
 
-
                         <div>
                             <Button variant={formState === 0 ? "contained" : ""} onClick={() => { setFormState(0) }}>
                                 Sign In

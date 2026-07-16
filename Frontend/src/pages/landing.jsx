@@ -13,18 +13,21 @@ export default function LandingPage() {
                     <h2>NexMeet</h2>
                 </div>
                 <div className='navlist'>
+
                     <h4 onClick={() => {
-                        router("/aljk237")
+                        let randomId = Math.random().toString(36).substring(2);
+                        router(`/${randomId}`);
                     }}>Join as Guest</h4>
+
                     <h4 onClick={() => {
                         router("/auth")
-
                     }}>Register</h4>
+
                     <div onClick={() => {
                         router("/auth")
-
                     }} role='button'>
                         <h4>Login</h4>
+
                     </div>
                 </div>
             </nav>
@@ -32,15 +35,15 @@ export default function LandingPage() {
             <div className="landingMainContainer">
                 <div>
                     <h1><span style={{ color: "#FF9839" }}>Connect</span> with Strangers like in real world</h1>
-                    <br></br>
-                    <p>Meet New People over a Video-Call</p>
+                    <br/>
+                    <h5>Meet New People over a Video-Call from <br/> anywhere in the WORLD!</h5>
                     <div role='button'>
                         <Link to={"/auth"}>Get Started</Link>
                     </div>
                 </div>
                 <div>
 
-                    <img src="/mobile.png" alt="" />
+                    <img src="/mobile.png" alt="PHOTO.png" />
 
                 </div>
             </div>
